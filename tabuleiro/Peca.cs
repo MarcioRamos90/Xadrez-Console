@@ -17,7 +17,7 @@ namespace tabuleiro
       this.qtdMovimentos = 0;
     }
 
-    public int movimentar()
+    public int incrementarQteMovimentos()
     {
       this.qtdMovimentos += 1;
       return this.qtdMovimentos;
