@@ -18,10 +18,14 @@ namespace tabuleiro
     }
 
     public abstract bool[,] movimentosPossiveis();
-    public int incrementarQteMovimentos()
+    public void incrementarQteMovimentos()
     {
-      this.qtdMovimentos += 1;
-      return this.qtdMovimentos;
+      ++qtdMovimentos;
+    }
+
+    public void decrementarQteMovimentos()
+    {
+      --qtdMovimentos;
     }
 
     public bool existeMovimentosPossiveis()
